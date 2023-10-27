@@ -1,0 +1,29 @@
+{{!-- <div class="container"> --}}
+        <form action="/signUp" method="post" class="signUp-box">
+            <div class="signUp-box">
+                <h1>Sign Up</h1>
+                  <div class="errorM"></div>
+                  {{#if messages.error}}
+                  <div class="error"><p class="mess">{{messages.error}}</p></div>
+                  {{/if}}
+                  {{#if messages.success}}
+                  <div class="success"><p class="mess">{{messages.success}}</p></div>
+                  {{/if}}
+                <div class="usename-box">
+                    <label for="usename" class="loginLabel">Name</label>
+                    <input type="text" name="users" id="usename" class="login-username signUpName" value="" required>
+                </div>
+                <div class="usename-box">
+                    <label for="email" class="loginLabel">Email</label>
+                    <input type="email" name="user_email" id="email" class="login-username email" value="" required>
+                </div>
+                <div class="password-box">
+                    <label for="password" class="loginLabel">Password</label>
+                    <input type="password" name="password" id="password" class="login-password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                </form>
+                <a href="/">Back to login</a>
+            </div>
+        
+    {{!-- </div> --}}

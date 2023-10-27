@@ -1,0 +1,11 @@
+<div class="userInfo">
+    {{#if messages.error}}
+                  <div class="error"><p class="mess">{{messages.error}}</p></div>
+                  {{/if}}
+                  {{#if messages.success}}
+                  <div class="success"><p class="mess">{{messages.success}}</p></div>
+                  {{/if}}
+    {{#each users}}
+    <p>{{this.username}}</p>
+    {{/each}}
+</div>

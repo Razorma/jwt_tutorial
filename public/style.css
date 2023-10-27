@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px solid red; */
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: burlywood;
+}
+.login-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(0, 0, 27);
+    padding: 10px 10px 30px 10px;
+    height: 100%;
+    width: 260px;
+    color: white;
+}
+.usename-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+.password-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+.loginLabel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+}
+.login-username{
+    height: 30px;
+    background-color: rgb(0, 0, 27);
+    color: white;
+}
+.login-password{
+    height: 30px;
+    background-color: rgb(0, 0, 27);
+    color: white;
+}
+
+
+/* admin */
+
+.signUp-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(0, 0, 27);
+    padding: 10px 10px 30px 10px;
+    height: 100%;
+    width: 90%;
+    color: white;
+}
+
+
+.role {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+
+}
+
+.input_label{
+    display: flex;
+    width: 70px;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.input_label label {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.usename-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+.password-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+.loginLabel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+}
+.login-username{
+    height: 30px;
+    background-color: rgb(0, 0, 27);
+    color: white;
+}
+.login-password{
+    height: 30px;
+    background-color: rgb(0, 0, 27);
+    color: white;
+}
+@media only screen and (min-width: 760px){
+    .signUp-box input{
+        width: 300px;
+    }
+    .signUp-box{
+        width: 60%;
+    }
+}
+button{
+    width: 80px;
+    height: 30px;
+    background-color: darkslategrey;
+}
+.userInfo{
+    background-color: rgb(0, 0, 27);
+    display: block;
+    color: white;
+    min-width: 330px;
+    min-height: 200px;
+}
+.error{
+    color: #ff0000;
+}
+.success{ 
+    color: #008512;
+}
+.mess{
+    background-color: #d8d4d4;
+    padding: 10px 8px 10px 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
